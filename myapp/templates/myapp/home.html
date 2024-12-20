@@ -1,0 +1,11 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to My Django App</h1>
+<p><a href="{% url 'add_category' %}">Add Category</a></p>
+<p><a href="{% url 'add_product' %}">Add Product</a></p>
+<p><a href="{% url 'add_customer' %}">Add Customer</a></p>
+<p><a href="{% url 'search' %}">Search Products</a></p>
+{% endblock %}
